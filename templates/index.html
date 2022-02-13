@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <link rel="icon" type="image/png" href="static/icons/favicon.png" />
+</head>
+
+<body>
+    <div style="display: flex;">
+        <table style="background:black;" id="table"></table>
+        <div style="padding-left: 20px;" id="moves"><h3>Moves:</h3></div>
+    </div>
+
+    <div style="margin-top: 10px">
+        Server:
+        <input type="text" value="127.0.0.1">
+        <input type="text" style="margin-top: 10px" value="5000" width="10" maxlength="4" size="3">
+
+    </div>
+    <div style="margin-top: 10px">
+        Name:
+        <input type="text" value="user">
+
+    </div>
+    <div style="margin-top: 10px">
+        Pieces theme:
+        <select id="piecesThemeSelector">
+            <option value="classic">Classic</option>
+            <option value="chess_v2">Chess v2</option>
+        </select>
+        <button id="resetButton">Reset board</button>
+    </div>
+</body>
+<script src="static/script.js" type="module"></script>
+
+</html>
